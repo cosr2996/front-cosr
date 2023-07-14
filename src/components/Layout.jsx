@@ -1,32 +1,32 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link ,useLocation} from "react-router-dom";
 import logo from "../assets/logo2.svg";
 import { Redes } from "./Redes";
 
 function Layout() {
+
+  const location = useLocation()
+  
   return (
     <div className="font-raleway">
       <header className="bg-black flex justify-between p-5 h-15 sm:flex-col lg:flex-row  ">
         <div className="flex items-center gap-2 sm:justify-center sm:mb-5 md:mb-10 lg:mb-0">
           <img src={logo} alt="" className="w-10" />
-          <Link to={"/"}>
-            {" "}
-            <h2 className="text-neutral-400  cursor-pointer hover:text-white  transition duration-300 sm:text-2xl lg:text-xl">
-              Omar Sanchez
-            </h2>
+          <Link className={`${location.pathname === '/' ? 'text-white' :''} text-neutral-400  cursor-pointer hover:text-white  transition duration-300 sm:text-2xl lg:text-xl`} to={'/'}>
+          Omar Sanchez
           </Link>
         </div>
 
         <nav className="text-neutral-400  flex sm:justify-center  ">
           <ul className="flex sm:gap-5 items-center sm:flex-col lg:flex-row md:flex-row md:gap-20 lg:gap-8">
             <li className="cursor-pointer hover:text-white  transition duration-300">
-              Skills
+              <Link className={`${location.pathname === '/skills' ? 'text-white' :''}`} to={"/skills"}>Skills</Link>
             </li>
 
             <li className="cursor-pointer hover:text-white  transition duration-300">
-              <Link to={"/certificates"}>Formacion</Link>
+              <Link className={`${location.pathname === '/certificates' ? 'text-white' :''}`} to={"/certificates"}>Formacion</Link>
             </li>
             <li className="cursor-pointer hover:text-white  transition duration-300">
-              <Link to={"/projects"}>Proyectos</Link>
+              <Link className={`${location.pathname === '/projects' ? 'text-white' :''}`} to={"/projects"}>Proyectos</Link>
             </li>
           </ul>
         </nav>

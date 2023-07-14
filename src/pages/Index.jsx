@@ -274,7 +274,7 @@ const Index = () => {
                 cols="40"
                 id="mensagem"
                 required
-                maxlength="300"
+                maxLength="300"
                 data-tipo="mensaje"
               ></textarea>
               <span className="hidden">Este campo no es valido</span>

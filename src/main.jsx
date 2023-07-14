@@ -6,6 +6,11 @@ import Layout from './components/Layout'
 import Index from './pages'
 import Certificates from './pages/Certificates'
 import Projects from './pages/Projects'
+import Skills from './pages/Skills'
+import NuevoCertificate from './pages/nuevoCertificate'
+
+
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -22,6 +27,14 @@ const router = createBrowserRouter([
       {
         path: '/projects',
         element: <Projects/>
+      },
+      {
+        path: '/skills',
+        element: <Skills/>
+      },
+      {
+        path: '/nuevoCertificate',
+        element: <NuevoCertificate/>
       },
 
     ]
