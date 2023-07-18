@@ -1,13 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["index.html", "./src/**/*.jsx"],
+  content: ["index.html", "./src/**/*.jsx",'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
+],
   theme: {
     extend: {
       screens: {
         'sm': {'min': '400px'},
         'md': {'min': '768px'},
         'xl': {'min': '1536px'},
-        '2xl': {'min': '1536px'},
+        '2xl': {'min': '2000px'},
       },
       fontFamily: {
         raleway: ["Raleway"],
@@ -15,6 +16,6 @@ export default {
         sacramento: ["Sacramento"],
       },
     },
-    plugins: [],
   },
+  plugins: [require('flowbite/plugin')],
 };

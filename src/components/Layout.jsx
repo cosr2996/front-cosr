@@ -1,5 +1,5 @@
 import { Outlet, Link ,useLocation} from "react-router-dom";
-import logo from "../assets/logo2.svg";
+import logo from "../assets/logo.svg";
 import { Redes } from "./Redes";
 
 function Layout() {

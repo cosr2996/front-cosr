@@ -6,7 +6,6 @@ import tailwind from "../assets/tailwind.svg";
 import node from "../assets/node.svg";
 import js from "../assets/js.svg";
 import react from "../assets/react.svg";
-
 import code from "../assets/code.svg";
 import movie from "../assets/cine.svg";
 import music from "../assets/music.svg";
@@ -18,8 +17,26 @@ import insignia1 from "../assets/insignia-1.png";
 import insignia2 from "../assets/insignia-2.png";
 import insignia3 from "../assets/insignia-3.png";
 import contact from "../assets/contact_image.png";
+import { useEffect, useState } from "react";
+import clienteAxios from "../config/clienteAxios";
 
 const Index = () => {
+  const [favorito, setFavorito] = useState("");
+
+  useEffect(() => {
+    const obtenerFavorito = async () => {
+      try {
+        const { data } = await clienteAxios(
+          "/projects/64b20ce7e98b1a3d24f1a119"
+        );
+        setFavorito(data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    obtenerFavorito();
+  }, []);
+
   return (
     <section className="text-white ">
       {/* PRESENTACION */}
@@ -29,16 +46,13 @@ const Index = () => {
             Hola mi nombre es Omar Sanchez y soy desarrollador Front End
           </h1>
           <p className="text-lg sm:text-center lg:text-left text-neutral-400">
-            
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
             saepe, repudiandae omnis facere ducimus illum blanditiis a eos
             impedit non aperiam eum, hic quis exercitationem. Eaque delectus aut
             voluptas accusamus.
           </p>
-          
-             <Redes />
-          
-         
+
+          <Redes />
         </div>
         <div>
           <img className="lg:w-full sm:w-2/5 sm:m-auto" src={imagen} alt="" />
@@ -53,13 +67,13 @@ const Index = () => {
           excepturi nihil illum esse odio neque, vitae rerum cumque quasi et
           ducimus non!
         </p>
-        <p >
+        <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
           saepe praesentium eum necessitatibus at laudantium et repellat omnis
           quod placeat similique voluptatem, aspernatur sit ipsum, veritatis
           beatae, porro ut soluta.
         </p>
-        
+
         <h3 className="text-5xl text-wite font-sacramento p-3 -rotate-6 block relative sm:-top-2 lg:-top-15 xl:-top-9 text-neutral-400">
           OmarSanchez
         </h3>
@@ -68,10 +82,10 @@ const Index = () => {
       <div className="bg-neutral-950 border-2 border-neutral-900 text-neutral-400">
         {/* SKILLS */}
         <div className="p-3 bg-neutral-950">
-          <h3 className=" text-2xl text-center pb-6  font-bold text-white">Skills</h3>
+          <h3 className=" text-2xl text-center pb-6  font-bold text-white">
+            Skills
+          </h3>
           <div className="flex justify-around flex-wrap ">
-
-          
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
               <ul className="flex flex-col items-center gap-2">
                 <li className="">
@@ -131,7 +145,9 @@ const Index = () => {
         {/* Hobbies */}
 
         <div className="p-3 mt-20 bg-neutral-950 ">
-          <h3 className=" text-2xl text-center pb-6 font-bold text-white">Hobbies</h3>
+          <h3 className=" text-2xl text-center pb-6 font-bold text-white">
+            Hobbies
+          </h3>
           <div className="flex justify-around items-center flex-wrap ">
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
               <ul className="flex flex-col items-center gap-2">
@@ -218,78 +234,36 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Sección de Contacto  */}
-      <div className="p-8 pt-10 bg-neutral-950 flex justify-center sm:p-0 sm:py-5 ">
-        <div className="w-5/6 flex gap-8 justify-center lg:items-center">
-           <div className="">
-          <img className="sm:hidden lg:block" src={contact} />
-        </div>
+      {/* mi proyecto favorito */}
 
-        <div className="flex flex-col gap-5 sm:w-11/12 sm:m-auto ">
-          <div className="flex flex-col gap-1 text-neutral-400">
-            <h2 className="text-xl font-bold">Contacto</h2>
-            <h3 className="">¿Quieres contactarme?</h3>
-            <h3 className="">
-              Complete el siguiente formulario y me pondré en contacto con usted
-              lo antes posible.
-            </h3>
+      <div className="   bg-neutral-950  pt-10 pb-10">
+        <div className="flex  m-auto sm:flex-col p-5 lg:flex-row bg-neutral-950 gap-10 lg:w-11/12">
+          <div>
+            <img src={favorito.image?.secure_url} alt="" />
           </div>
+          <div>
+            <div className="flex flex-col gap-3">
+              <h1 className="sm:text-4xl sm: text-center lg:text-6xl p-5">
+                {favorito.name}
+              </h1>
+              <div className="flex sm:flex-col lg:flex-row md:flex-row lg:justify-between md:justify-between p-2">
+                <span className="opacity-50">{favorito.technologies}</span>
+                <span className="opacity-50">{favorito.finished}</span>
+              </div>
 
-          <form className="" name="form">
-            <div className="flex flex-col">
-              <label className="text-neutral-400" htmlFor="name">Nombre</label>
-              <input
-                className=" p-2 rounded-md bg-black border-2 border-neutral-400"
-                type="text"
-                id="name"
-              />
-              <span className="hidden">Este campo no es valido</span>
+              <p>{favorito.description}</p>
+
+              <a
+                className="hover:scale-105 transition-all bg-white text-black block w-1/2 text-center font-bold p-3 m-auto rounded-md lg:mt-10"
+                target="blank"
+                href={favorito.url}
+              >
+                {" "}
+                Demo
+              </a>
             </div>
-
-            <div className="flex flex-col">
-              <label className="text-neutral-400" htmlFor="name">Email</label>
-              <input
-                className=" p-2 rounded-md bg-black border-2  border-neutral-400"
-                type="email"
-                name=""
-                id=""
-              />
-              <span className="hidden">Este campo no es valido</span>
-            </div>
-
-            <div className="flex flex-col">
-              <label className="text-neutral-400" htmlFor="name">Asunto</label>
-              <input
-                className=" p-2 rounded-md bg-black border-2  border-neutral-400"
-                type="text"
-              />
-              <span className="hidden">Este campo no es valido</span>
-            </div>
-
-            <div className="flex flex-col">
-              <label className="text-neutral-400" htmlFor="name">Mensaje</label>
-              <textarea
-                className=" p-2 rounded-md bg-black border-2  border-neutral-400"
-                rows="5"
-                cols="40"
-                id="mensagem"
-                required
-                maxLength="300"
-                data-tipo="mensaje"
-              ></textarea>
-              <span className="hidden">Este campo no es valido</span>
-            </div>
-
-            <button
-              type="submit"
-              className=" rounded-md bg-white text-black border-2 border-neutral-950 p-3 font-bold mt-5"
-            >
-              Enviar mensaje
-            </button>
-          </form>
+          </div>
         </div>
-        </div>
-       
       </div>
     </section>
   );
