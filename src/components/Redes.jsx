@@ -1,5 +1,6 @@
 import React from "react";
-import icon from '../assets/arrow.png'
+import icon from '../assets/arrow.webp'
+
 import cv from '../assets/cv.pdf'
 
 export const Redes = () => {

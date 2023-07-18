@@ -60,6 +60,10 @@ const NuevoCertificate = () => {
         setplatform("");
         setdescription("");
         setImage(null);
+         const radio1 = document.getElementById('plataform-1')
+         const radio2 = document.getElementById('plataform-2')
+         radio1.checked=false
+         radio2.checked=false
       }, "3000");
     } catch (error) {
       //? Ocurrió un error al enviar la imagen
@@ -102,13 +106,13 @@ const NuevoCertificate = () => {
           onChange={(e) => setdescription(e.target.value)}
         />
 
-        <input
-          className="p-2 rounded-md"
-          type="text"
-          placeholder="platform"
-          value={platform}
-          onChange={(e) => setplatform(e.target.value)}
-        />
+        <div className="flex gap-5 items-center">
+          <input type="radio" id="plataform-1" name="age" value="alura" onChange={(e) => setplatform(e.target.value)}   />
+          <label className="text-white" for="age1">Alura</label>
+          <input type="radio" id="plataform-2" name="age" value="udemy" onChange={(e) => setplatform(e.target.value)}/>
+          <label className="text-white" for="age2">Udemy</label>
+        </div>
+
         <input
           className="p-2 rounded-md text-white"
           type="file"

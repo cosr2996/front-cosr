@@ -12,6 +12,7 @@ import NuevoProyecto from './pages/nuevoProyecto'
 import ErrorPage from './components/ErrorPage'
 import Project from './pages/Project'
 import Certificate from './pages/Certificate'
+ import { loader as loaderCertificates } from './pages/Certificates'
 
 
 
@@ -24,11 +25,11 @@ const router = createBrowserRouter([
       {
         index:true,
         element: <Index/>,
-        
       },
       {
         path: '/certificates',
-        element: <Certificates/>
+        element: <Certificates/>,
+         loader:loaderCertificates
       },
       {
         path: '/certificates/:id',
@@ -37,12 +38,10 @@ const router = createBrowserRouter([
       {
         path: '/projects',
         element: <Projects/>,
-       
       },
       {
         path: '/projects/:id',
         element: <Project/>,
-        
       },
       {
         path: '/skills',
@@ -54,7 +53,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/nuevoProject',
-        element: <NuevoProyecto/>
+        element: <NuevoProyecto/>,
+        
       },
 
     ]

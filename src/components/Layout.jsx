@@ -2,6 +2,7 @@ import { Outlet, Link ,useLocation} from "react-router-dom";
 import logo from "../assets/logo.svg";
 import { Redes } from "./Redes";
 
+
 function Layout() {
 
   const location = useLocation()

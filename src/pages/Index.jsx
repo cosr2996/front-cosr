@@ -1,5 +1,5 @@
 import { Redes } from "../components/Redes";
-import imagen from "../assets/yo.png";
+import imagen from "../assets/yo.webp";
 import css from "../assets/css.svg";
 import html from "../assets/html.svg";
 import tailwind from "../assets/tailwind.svg";
@@ -12,11 +12,10 @@ import music from "../assets/music.svg";
 import game from "../assets/game.svg";
 import coffe from "../assets/coffe.svg";
 import build from "../assets/build.svg";
-import one from "../assets/one.png";
-import insignia1 from "../assets/insignia-1.png";
-import insignia2 from "../assets/insignia-2.png";
-import insignia3 from "../assets/insignia-3.png";
-import contact from "../assets/contact_image.png";
+import one from "../assets/one.webp";
+import insignia1 from "../assets/insignia1.webp";
+import insignia2 from "../assets/insignia2.webp";
+import insignia3 from "../assets/insignia3.webp";
 import { useEffect, useState } from "react";
 import clienteAxios from "../config/clienteAxios";
 
@@ -27,7 +26,7 @@ const Index = () => {
     const obtenerFavorito = async () => {
       try {
         const { data } = await clienteAxios(
-          "/projects/64b20ce7e98b1a3d24f1a119"
+          "/projects/64b6538234a1241564c4e989"
         );
         setFavorito(data);
       } catch (error) {
@@ -98,7 +97,7 @@ const Index = () => {
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
               <ul className="flex flex-col items-center gap-2">
                 <li className="">
-                  <img className="w-12" src={js} alt="" />
+                  <img className="w-12" src={js} alt="logo javascript" />
                 </li>
                 <li className="">Javascript</li>
               </ul>
@@ -107,7 +106,7 @@ const Index = () => {
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
               <ul className="flex flex-col items-center gap-2">
                 <li className="">
-                  <img className="w-12" src={tailwind} alt="" />
+                  <img className="w-12" src={tailwind} alt="loco tailwind" />
                 </li>
                 <li className="">TailWind</li>
               </ul>
@@ -116,7 +115,7 @@ const Index = () => {
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
               <ul className="flex flex-col items-center gap-2">
                 <li className="">
-                  <img className="w-12" src={node} alt="" />
+                  <img className="w-12" src={node} alt="logo node" />
                 </li>
                 <li className="">Node JS</li>
               </ul>
@@ -125,7 +124,7 @@ const Index = () => {
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
               <ul className="flex flex-col items-center gap-2">
                 <li className="">
-                  <img className="w-12" src={react} alt="" />
+                  <img className="w-12" src={react} alt="logo react" />
                 </li>
                 <li className="e">React</li>
               </ul>
@@ -134,7 +133,7 @@ const Index = () => {
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
               <ul className="flex flex-col items-center gap-2">
                 <li className="">
-                  <img className="w-12" src={css} alt="" />
+                  <img className="w-12" src={css} alt="logo css" />
                 </li>
                 <li className="">CSS</li>
               </ul>
@@ -161,7 +160,7 @@ const Index = () => {
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
               <ul className="flex flex-col items-center gap-2">
                 <li className="">
-                  <img className="w-12" src={music} alt="" />
+                  <img className="w-12" src={music} alt="hobbie musica" />
                 </li>
                 <li className="">Musica</li>
               </ul>
@@ -170,7 +169,7 @@ const Index = () => {
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
               <ul className="flex flex-col items-center gap-2">
                 <li className="">
-                  <img className="w-12" src={game} alt="" />
+                  <img className="w-12" src={game} alt="hobbie jugar videojuegos" />
                 </li>
                 <li className="">Jugar</li>
               </ul>
@@ -179,7 +178,7 @@ const Index = () => {
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
               <ul className="flex flex-col items-center  gap-2">
                 <li className="">
-                  <img className="w-12" src={code} alt="" />
+                  <img className="w-12" src={code} alt="hobbie programar" />
                 </li>
                 <li className="">Programar</li>
               </ul>
@@ -188,7 +187,7 @@ const Index = () => {
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
               <ul className="flex flex-col items-center gap-2">
                 <li className="">
-                  <img className="w-12" src={coffe} alt="" />
+                  <img className="w-12" src={coffe} alt="hobbie hacer cafe" />
                 </li>
                 <li className="e">Barista</li>
               </ul>
@@ -197,7 +196,7 @@ const Index = () => {
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
               <ul className="flex flex-col items-center gap-2">
                 <li className="">
-                  <img className="w-12" src={build} alt="" />
+                  <img className="w-12" src={build} alt="hobbie construir cosas" />
                 </li>
                 <li className="">Counstruir</li>
               </ul>
@@ -237,6 +236,7 @@ const Index = () => {
       {/* mi proyecto favorito */}
 
       <div className="   bg-neutral-950  pt-10 pb-10">
+        <h1 className="text-2xl font-bold text-center mb-10">Ultimo Proyecto</h1>
         <div className="flex  m-auto sm:flex-col p-5 lg:flex-row bg-neutral-950 gap-10 lg:w-11/12">
           <div>
             <img src={favorito.image?.secure_url} alt="" />

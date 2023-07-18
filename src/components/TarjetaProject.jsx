@@ -4,7 +4,7 @@ const TarjetaProject = ({ project }) => {
   return (
     <article className="sm:w-11/12 xl:w-80 lg:w-3/12 md:w-5/12 bg-white p-5 rounded-md hover:scale-105 transition-all">
       <div>
-        <img src={project.image.secure_url} alt="" />
+        <img src={project.image.secure_url} alt="imamgen de proyecto" />
       </div>
       <div className="text-neutral-900 pb-4">
         <h3 className="text-black font-bold text-2xl text-center p-2">
