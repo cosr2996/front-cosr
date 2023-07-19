@@ -46,14 +46,14 @@ const NuevoProyecto = () => {
       formData.append("url", url);
       formData.append("finished", finished);
 
-      //         //? Realiza la solicitud HTTP utilizando Axios con async/await
+      //? Realiza la solicitud HTTP utilizando Axios con async/await
       const response = await clienteAxios.post("/projects", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
       });
 
-      //         //? La solicitud se ha completado exitosamente
+       //? La solicitud se ha completado exitosamente
       setAlerta({
         msg: "proyecto creado con exito",
         error: false,

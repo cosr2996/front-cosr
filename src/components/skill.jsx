@@ -1,6 +1,4 @@
-
 import { Progress } from 'flowbite-react';
-
 
 const Skill = ({title,image,progress,nivel}) => {
   return (

@@ -21,6 +21,7 @@ import clienteAxios from "../config/clienteAxios";
 
 const Index = () => {
   const [favorito, setFavorito] = useState("");
+  
 
   useEffect(() => {
     const obtenerFavorito = async () => {
@@ -36,13 +37,14 @@ const Index = () => {
     obtenerFavorito();
   }, []);
 
+
   return (
     <section className="text-white ">
       {/* PRESENTACION */}
-      <div className="bg-black lg:p-10 sm:p-5 flex sm:flex-col-reverse lg:flex-row w-11/12 m-auto gap-5">
+      <div className="bg-black lg:p-10 sm:p-5 flex sm:flex-col-reverse lg:flex-row w-11/12 m-auto gap-5 lg:pt-32">
         <div className="flex-col flex	gap-4 ">
           <h1 className=" lg:text-6xl font-bold sm:text-4xl  sm:text-center lg:text-left">
-            Hola mi nombre es Omar Sanchez y soy desarrollador Front End
+            Hola mi nombre es Omar Sanchez y soy desarrollador Front End <span id="efecto" className="text-blue-400">|</span>
           </h1>
           <p className="text-lg sm:text-center lg:text-left text-neutral-400">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
@@ -54,7 +56,7 @@ const Index = () => {
           <Redes />
         </div>
         <div>
-          <img className="lg:w-full sm:w-2/5 sm:m-auto" src={imagen} alt="" />
+          <img className="lg:w-full p-2 sm:w-2/5 sm:m-auto ring-2 rounded-full ring-white dark:ring-gray-500" src={imagen} alt="" />
         </div>
       </div>
       {/* SOBRE MI */}

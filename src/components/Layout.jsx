@@ -17,7 +17,7 @@ function Layout() {
           </Link>
         </div>
 
-        <nav className="text-neutral-400  flex sm:justify-center  ">
+        <nav className="text-neutral-400  flex sm:justify-center lg:h-12 ">
           <ul className="flex sm:gap-5 items-center sm:flex-col lg:flex-row md:flex-row md:gap-20 lg:gap-8">
             <li className="cursor-pointer hover:text-white  transition duration-300">
               <Link className={`${location.pathname === '/skills' ? 'text-white' :''}`} to={"/skills"}>Skills</Link>

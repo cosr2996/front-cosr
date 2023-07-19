@@ -1,22 +1,19 @@
 import { useEffect, useState } from "react";
 import TarjetaProject from "../components/TarjetaProject";
-import Alerta from "../components/Alerta";
 import clienteAxios from "../config/clienteAxios";
-import { obtenerProjects } from "../api/projects";
-import { useLoaderData } from "react-router-dom";
+import Cargando from "../components/Cargando";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
+  const [cargando, setCargando] = useState(false);
 
   useEffect(() => {
     async function obtenerProjects() {
+      setCargando(true)
       try {
-        const config = {
-          "Content-Type": "application/json",
-        };
-        const { data } = await clienteAxios("/projects", config);
-
+        const { data } = await clienteAxios("/projects");
         setProjects(data);
+        setCargando(false)
       } catch (error) {
         console.log(error);
       }
@@ -31,6 +28,11 @@ const Projects = () => {
       <h2 className="text-neutral-400 block relative xl:left-20 lg:left-40 sm:left-10">
         Total: {projects.length}
       </h2>
+      {cargando && (
+      <div className="flex items-center justify-center">
+        <Cargando/>
+      </div>
+      )}
       <div className="p-5 flex gap-10 flex-wrap  w-full justify-center">
         {projects.length ? (
           projects.map((project) => (
