@@ -15,7 +15,7 @@ import prisma from "../assets/prisma.svg";
 const Skills = () => {
   return (
     <>
-      <h1 className="text-white text-center text-6xl font-bold">Skills</h1>
+      <h1 className="text-white text-center text-6xl font-bold animate-fade-in-y">Skills</h1>
       <div className="p-10 flex gap-5 justify-around flex-wrap">
         <Skill title="React" image={react} progress={50} nivel={"Medio"} />
         <Skill title="Node" image={node} progress={90} nivel={"Alto"} />

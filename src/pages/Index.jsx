@@ -41,41 +41,33 @@ const Index = () => {
   return (
     <section className="text-white ">
       {/* PRESENTACION */}
-      <div className="bg-black lg:p-10 sm:p-5 flex sm:flex-col-reverse lg:flex-row w-11/12 m-auto gap-5 lg:pt-32">
+      <div className="xl:w-2/4 bg-black lg:p-10 sm:p-5 flex sm:flex-col-reverse lg:flex-row w-11/12 m-auto gap-5 lg:pt-20">
         <div className="flex-col flex	gap-4 ">
-          <h1 className=" lg:text-6xl font-bold sm:text-4xl  sm:text-center lg:text-left">
-            Hola mi nombre es Omar Sanchez y soy desarrollador Front End <span id="efecto" className="text-blue-400">|</span>
+          <h1 className=" lg:text-6xl font-bold sm:text-4xl  sm:text-center lg:text-left ">
+            Hola mi nombre es Omar Sanchez y soy desarrollador Front End <span id="efecto" className="text-neutral-400 animate-bling">|</span>
           </h1>
           <p className="text-lg sm:text-center lg:text-left text-neutral-400">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
-            saepe, repudiandae omnis facere ducimus illum blanditiis a eos
-            impedit non aperiam eum, hic quis exercitationem. Eaque delectus aut
-            voluptas accusamus.
+          Soy un desarrollador junior especializado en React he adquirido experiencia a través de diferentes proyectos que he desarrollado en múltiples cursos en  plataformas como udemy y alura , además tengo la fortuna de poder formar parte del programa de Oracle <span className="text-neutral-200"> “ONE – Oracle Next Education”</span> en el cual a través de varios retos me he podido especializar como desarrollador front end aprendiendo tecnologías como html ,css ,node, design-responsive , git y react 
           </p>
 
           <Redes />
         </div>
-        <div>
-          <img className="lg:w-full p-2 sm:w-2/5 sm:m-auto ring-2 rounded-full ring-white dark:ring-gray-500" src={imagen} alt="" />
+        <div className="w-11/12">
+          <img className="lg:w-full p-2 sm:w-2/5 sm:m-auto ring-2 rounded-full ring-neutral-400 " src={imagen} alt="" />
         </div>
       </div>
       {/* SOBRE MI */}
-      <div className="p-10 flex flex-col gap-3 text-neutral-400 bg-black lg:w-11/12 ">
+      <div className=" xl:w-2/4 xl:m-auto p-10 flex flex-col gap-3 text-neutral-400 bg-black lg:w-11/12 ">
         <h2 className="text-2xl font-bold text-white">Sobre mi</h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
-          reiciendis sunt sequi tempore minima quas numquam repellendus
-          excepturi nihil illum esse odio neque, vitae rerum cumque quasi et
-          ducimus non!
+        Hola mi nombre es omar sánchez , desde niño fui un apasionado de la tecnología al que le encantaba estar todo el dia frente a ala computadora actualmente  tengo 23 años soy un amante de la programación en especial  del desarrollo web me considero  un gran autodidacta enfocado en estar siempre en constante aprendizaje sobre las nuevas tecnologías y el uso de las mejores prácticas a la hora de desarrollar
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
-          saepe praesentium eum necessitatibus at laudantium et repellat omnis
-          quod placeat similique voluptatem, aspernatur sit ipsum, veritatis
-          beatae, porro ut soluta.
+        Soy una persona muy apasionada por lo que hago , me considero una persona sociable que  trabaja muy bien en equipo y al cual le encanta aprender de ellos.
+
         </p>
 
-        <h3 className="text-5xl text-wite font-sacramento p-3 -rotate-6 block relative sm:-top-2 lg:-top-15 xl:-top-9 text-neutral-400">
+        <h3 className="text-5xl text-wite font-sacramento p-3 -rotate-6 block relative sm:-top-2 lg:-top-15 xl:-top-9 text-white lg:mb-4">
           OmarSanchez
         </h3>
       </div>
@@ -90,7 +82,7 @@ const Index = () => {
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
               <ul className="flex flex-col items-center gap-2">
                 <li className="">
-                  <img className="w-12" src={html} />
+                  <img className=" hover:scale-105 transition duration-300 w-12" src={html} />
                 </li>
                 <li className="">HTML 5</li>
               </ul>
@@ -99,7 +91,7 @@ const Index = () => {
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
               <ul className="flex flex-col items-center gap-2">
                 <li className="">
-                  <img className="w-12" src={js} alt="logo javascript" />
+                  <img className=" hover:scale-105 transition duration-300 w-12" src={js} alt="logo javascript" />
                 </li>
                 <li className="">Javascript</li>
               </ul>
@@ -108,7 +100,7 @@ const Index = () => {
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
               <ul className="flex flex-col items-center gap-2">
                 <li className="">
-                  <img className="w-12" src={tailwind} alt="loco tailwind" />
+                  <img className=" hover:scale-105 transition duration-300 w-12" src={tailwind} alt="loco tailwind" />
                 </li>
                 <li className="">TailWind</li>
               </ul>
@@ -117,7 +109,7 @@ const Index = () => {
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
               <ul className="flex flex-col items-center gap-2">
                 <li className="">
-                  <img className="w-12" src={node} alt="logo node" />
+                  <img className=" hover:scale-105 transition duration-300 w-12" src={node} alt="logo node" />
                 </li>
                 <li className="">Node JS</li>
               </ul>
@@ -126,16 +118,16 @@ const Index = () => {
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
               <ul className="flex flex-col items-center gap-2">
                 <li className="">
-                  <img className="w-12" src={react} alt="logo react" />
+                  <img className="w-12 hover:scale-105 transition duration-300" src={react} alt="logo react" />
                 </li>
                 <li className="e">React</li>
               </ul>
             </div>
 
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
-              <ul className="flex flex-col items-center gap-2">
+              <ul className="flex flex-col items-center gap-2 ">
                 <li className="">
-                  <img className="w-12" src={css} alt="logo css" />
+                  <img className="w-12 hover:scale-105 transition duration-300" src={css} alt="logo css" />
                 </li>
                 <li className="">CSS</li>
               </ul>
@@ -153,7 +145,7 @@ const Index = () => {
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
               <ul className="flex flex-col items-center gap-2">
                 <li className="">
-                  <img className="w-12" src={movie} />
+                  <img className="hover:scale-105 transition duration-300 w-12" src={movie} />
                 </li>
                 <li className="">Peliculas</li>
               </ul>
@@ -162,7 +154,7 @@ const Index = () => {
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
               <ul className="flex flex-col items-center gap-2">
                 <li className="">
-                  <img className="w-12" src={music} alt="hobbie musica" />
+                  <img className=" hover:scale-105 transition duration-300 w-12" src={music} alt="hobbie musica" />
                 </li>
                 <li className="">Musica</li>
               </ul>
@@ -171,7 +163,7 @@ const Index = () => {
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
               <ul className="flex flex-col items-center gap-2">
                 <li className="">
-                  <img className="w-12" src={game} alt="hobbie jugar videojuegos" />
+                  <img className=" hover:scale-105 transition duration-300 w-12" src={game} alt="hobbie jugar videojuegos" />
                 </li>
                 <li className="">Jugar</li>
               </ul>
@@ -180,7 +172,7 @@ const Index = () => {
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
               <ul className="flex flex-col items-center  gap-2">
                 <li className="">
-                  <img className="w-12" src={code} alt="hobbie programar" />
+                  <img className="hover:scale-105 transition duration-300 w-12" src={code} alt="hobbie programar" />
                 </li>
                 <li className="">Programar</li>
               </ul>
@@ -189,7 +181,7 @@ const Index = () => {
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
               <ul className="flex flex-col items-center gap-2">
                 <li className="">
-                  <img className="w-12" src={coffe} alt="hobbie hacer cafe" />
+                  <img className="hover:scale-105 transition duration-300 w-12" src={coffe} alt="hobbie hacer cafe" />
                 </li>
                 <li className="e">Barista</li>
               </ul>
@@ -198,7 +190,7 @@ const Index = () => {
             <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
               <ul className="flex flex-col items-center gap-2">
                 <li className="">
-                  <img className="w-12" src={build} alt="hobbie construir cosas" />
+                  <img className="hover:scale-105 transition duration-300 w-12" src={build} alt="hobbie construir cosas" />
                 </li>
                 <li className="">Counstruir</li>
               </ul>
@@ -239,7 +231,7 @@ const Index = () => {
 
       <div className="   bg-neutral-950  pt-10 pb-10">
         <h1 className="text-2xl font-bold text-center mb-10">Ultimo Proyecto</h1>
-        <div className="flex  m-auto sm:flex-col p-5 lg:flex-row bg-neutral-950 gap-10 lg:w-11/12">
+        <div className=" xl:w-3/5 flex  m-auto sm:flex-col p-5 lg:flex-row bg-neutral-950 gap-10 lg:w-11/12">
           <div>
             <img src={favorito.image?.secure_url} alt="" />
           </div>

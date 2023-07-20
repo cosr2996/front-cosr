@@ -10,12 +10,13 @@ const NuevoCertificate = () => {
   const [image, setImage] = useState(null);
   const [alerta, setAlerta] = useState("");
 
+  //? Obtén la imagen del evento del input
   const manejarCambioImagen = (event) => {
-    //? Obtén la imagen del evento del input
     const imagenSeleccionada = event.target.files[0];
     setImage(imagenSeleccionada);
   };
 
+  //? funcion para enviar
   const handleSubmit = async (e) => {
     e.preventDefault();
     //?validacion
@@ -75,7 +76,7 @@ const NuevoCertificate = () => {
 
   return (
     <section>
-      <h1 className="text-white text-6xl text-center p-5">nuevo certificado</h1>
+      <h1 className="text-white text-6xl text-center p-5">Nuevo Certificado</h1>
 
       {msg && <Alerta alerta={alerta} />}
       <form

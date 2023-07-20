@@ -24,14 +24,14 @@ const Certificates = () => {
   }, []);
 
   return (
-    <section className="w-full">
-      <h1 className="text-white text-6xl text-center pb-20">Formación</h1>
+    <section className="w-full ">
+      <h1 className="text-white text-6xl text-center pb-20 animate-fade-in-y">Formación</h1>
       {/* tarjetas */}
       <h2 className="text-neutral-400 block relative xl:left-20 lg:left-40 sm:left-10">
         Total: {certificates.length}
       </h2>
       {cargando && (
-      <div className="flex items-center justify-center">
+      <div className="flex items-start justify-center h-screen">
         <Cargando/>
       </div>
       )}
