@@ -4,7 +4,7 @@ import cv from '../assets/cv.pdf'
 
 export const Redes = ({route}) => {
   return (
-    <div className=" font-bold sm:text-sm">
+    <div className=" font-bold sm:text-sm lg:text-lg">
       <ul className="flex gap-5 sm:justify-around lg:justify-normal sm:items-center">
         <li className="flex gap-1 items-center  hover:scale-105  transition duration-300">
           <a target="blank" href="https://github.com/cosr2996">GitHub</a>
