@@ -2,7 +2,7 @@ import React from "react";
 import icon from '../assets/arrow.webp'
 import cv from '../assets/cv.pdf'
 
-export const Redes = () => {
+export const Redes = ({route}) => {
   return (
     <div className=" font-bold">
       <ul className="flex gap-5 sm:justify-around lg:justify-normal sm:items-center">
@@ -18,9 +18,10 @@ export const Redes = () => {
           <a target="blank" href="https://www.instagram.com/cosr2000/">Instagram</a>
           <img src={icon} className="w-4 h-4" />
         </li>
-        <li className="flex gap-1 items-center  hover:scale-105  transition duration-300">
+        <li className={`flex gap-1 items-center  hover:scale-105  transition duration-300 bg-green-500 p-1 rounded-md ${route ==='footer'? 'text-white':""}`}>
           <a download="cv.pdf" href={cv}>
             Currículo
+            
           </a>
           <img src={icon} className="w-4 h-4" />
         </li>

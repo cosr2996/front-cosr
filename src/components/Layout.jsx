@@ -50,8 +50,10 @@ function Layout() {
           <span className="sm:hidden md:block opacity-70">2023</span>
         </div>
 
-        <div>
-          <Redes />
+        <div className="">
+          <Redes
+          route={'footer'}
+           />
         </div>
       </footer>
     </div>

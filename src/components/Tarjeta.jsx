@@ -21,7 +21,7 @@ const Tarjeta = ({ certificate }) => {
       <div className="flex justify-between items-center">
         <Link
           to={certificate._id}
-          className="hover:scale-105 transition-all bg-black block gap-5 text-white p-3 rounded-md font-bold w-1/2 text-center"
+          className="hover:scale-105 transition-all bg-black block gap-5 text-white p-3 rounded-md font-bold w-1/2 text-center hover:bg-green-500"
         >
           Ver Detalles
         </Link>

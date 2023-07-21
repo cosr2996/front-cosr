@@ -27,7 +27,7 @@ const TarjetaProject = ({ project }) => {
           </Link>
           <a
             target="blank"
-            className="bg-black block gap-5 text-white p-3 font-bold w-1/2 text-center rounded-md hover:scale-105 transition-all"
+            className="bg-green-500 block gap-5 text-white p-3 font-bold w-1/2 text-center rounded-md hover:scale-105 transition-all"
             href={project.url}
           >
             Demo
