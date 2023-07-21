@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        sm: { min: "400px" },
+        sm: { min: "300px" },
         md: { min: "768px" },
         xl: { min: "1536px" },
         "2xl": { min: "2000px" },
