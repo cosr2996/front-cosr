@@ -1,4 +1,4 @@
-import { Progress } from 'flowbite-react';
+//import { Progress } from 'flowbite-react';
 
 const Skill = ({title,image,progress,nivel}) => {
   return (
@@ -10,11 +10,11 @@ const Skill = ({title,image,progress,nivel}) => {
     </div>
     <h2 className="font-bold">{title}</h2>
     <div className="w-3/4 		">
-    <Progress
+    {/* <Progress
          progress={progress}
          color="dark"
          size="xl"
-         />
+         /> */}
     </div>
     <span className="opacity-50">{nivel}</span>
 
