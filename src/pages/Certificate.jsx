@@ -22,7 +22,7 @@ const Certificate = () => {
 
   return (
     <div className="lg:p-16 sm:p-5  xl:w-3/4 xl:m-auto w-full  2xl:w-2/4 ">
-      <h1 className="text-white sm:text-6xl lg:text-7xl text-center p-5  mb-10 xl:text-6xl">
+      <h1 className="text-white sm:text-2xl md:text-4xl lg:text-7xl text-center p-5  mb-10 xl:text-6xl">
         {certificate.title}
       </h1>
 

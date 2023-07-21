@@ -21,7 +21,7 @@ const Project = () => {
   return (
     <div className="lg:p-16 sm:p-5  xl:w-3/4 xl:m-auto w-full  2xl:w-2/4 ">
       
-      <h1 className="text-white sm:text-6xl lg:text-7xl text-center p-5  mb-10 xl:text-6xl">{project.name}</h1>
+      <h1 className="text-white sm:text-2xl md:text-4xl lg:text-7xl text-center p-5  mb-10 xl:text-6xl">{project.name}</h1>
 
       <div className="flex sm:flex-col lg:flex-row gap-4 sm:gap-8 mb-20 sm:mb-10 w-full  ">
 
