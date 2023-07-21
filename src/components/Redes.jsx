@@ -20,7 +20,7 @@ export const Redes = ({route}) => {
         </li>
         <li className={`flex gap-1  items-center  hover:scale-105  transition duration-300 bg-green-500 p-1 rounded-md ${route ==='footer'? 'text-white':""}`}>
           <a download="cv.pdf" href={cv}>
-            Currículo
+          Curriculum
           </a>
           <img src={icon} className="w-4 h-4 sm:hidden" />
         </li>
