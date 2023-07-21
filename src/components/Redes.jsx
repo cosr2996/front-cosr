@@ -22,7 +22,7 @@ export const Redes = ({route}) => {
           <a download="cv.pdf" href={cv}>
           Curriculum
           </a>
-          <img src={icon} className="w-4 h-4 sm:hidden" />
+          <img src={icon} className="w-4 h-4 sm:hidden lg:block" />
         </li>
       </ul>
     </div>
