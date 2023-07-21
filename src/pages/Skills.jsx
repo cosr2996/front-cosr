@@ -11,7 +11,7 @@ import next from "../assets/next.svg";
 import vitejs from "../assets/vitejs.svg";
 import redux from "../assets/redux.svg";
 import prisma from "../assets/prisma.svg";
-import Skill from '../components/Skill'
+//import Skill from '../components/Skill'
 
 const Skills = () => {
   return (
