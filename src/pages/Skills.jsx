@@ -18,7 +18,7 @@ const Skills = () => {
     <>
       <h1 className="text-white text-center text-6xl font-bold animate-fade-in-y">Skills</h1>
       <div className="p-10 flex gap-5 justify-around flex-wrap">
-        <Skill title="React" image={react} progress={50} nivel={"Medio"} />
+        {/* <Skill title="React" image={react} progress={50} nivel={"Medio"} />
         <Skill title="Node" image={node} progress={90} nivel={"Alto"} />
         <Skill image={html} title="HTML" progress={90} nivel={"Alto"} />
         <Skill image={css} title="CSS" progress={90} nivel={"Alto"} />
@@ -29,7 +29,7 @@ const Skills = () => {
         <Skill image={next} title="Next" progress={25} nivel={"Bajo"} />
         <Skill image={vitejs} title="Vite" progress={90} nivel={"Alto"} />
         <Skill image={redux} title="Redux" progress={25} nivel={"Bajo"} />
-        <Skill image={prisma} title="Prisma" progress={25} nivel={"Bajo"} />
+        <Skill image={prisma} title="Prisma" progress={25} nivel={"Bajo"} /> */}
       </div>
     </>
   );
