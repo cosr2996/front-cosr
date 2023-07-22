@@ -47,7 +47,7 @@ const Index = () => {
             Hola, mi nombre es Omar Sanchez y soy desarrollador Front End <span id="efecto" className="text-neutral-400 animate-bling">|</span>
           </h1>
           <p className="text-lg sm:text-center lg:text-left text-neutral-400">
-          Desarrollador junior especializado en React, he adquirido experiencia a través de diferentes proyectos que he desarrollado en múltiples cursos en  plataformas como udemy y alura , además tengo la fortuna de poder formar parte del programa de Oracle <span className="text-neutral-200"> “ONE – Oracle Next Education”</span> en el cual a través de retos me he podido especializar como desarrollador front end aprendiendo tecnologías como HTML, CSS, Node, Design-responsive, Git y React 
+          Desarrollador junior especializado en React, con experiencia adquirida a través de diferentes proyectos que he desarrollado en múltiples cursos en  plataformas como udemy y alura , además tengo la fortuna de poder formar parte del programa de Oracle <span className="text-neutral-200"> “ONE – Oracle Next Education”</span> en el cual a través de retos me he podido especializar como desarrollador front end aprendiendo tecnologías como HTML, CSS, Node, Design-responsive, Git y React 
           </p>
 
           <Redes
@@ -61,7 +61,7 @@ const Index = () => {
       <div className=" xl:w-2/4 xl:m-auto p-10 flex flex-col gap-3 text-neutral-400 bg-black lg:w-11/12 ">
         <h2 className="text-2xl font-bold text-white">Sobre mi</h2>
         <p>
-        Desde niño fui un apasionado de la tecnología al que le encantaba estar todo el dia frente a ala computadora. Actualmente  tengo 23 años y soy un amante de la programación, en especial del desarrollo web. Me considero  un gran autodidacta enfocado en estar siempre en constante aprendizaje sobre las nuevas tecnologías y el uso de las mejores prácticas a la hora de desarrollar.
+        Desde niño fui un apasionado de la tecnología al que le encantaba estar todo el dia frente a la computadora. Actualmente  tengo 23 años y soy un amante de la programación, en especial del desarrollo web. Me considero  un gran autodidacta enfocado en estar siempre en constante aprendizaje sobre las nuevas tecnologías y el uso de las mejores prácticas a la hora de desarrollar.
         </p>
         <p>
         Soy una persona muy apasionada por lo que hago , además  de sociable que trabaja muy bien en equipo y al cual le encanta aprender de ellos.
