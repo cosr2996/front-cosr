@@ -14,10 +14,3 @@ export async function obtenerCertificate(){
 
 
 
-  export async function crearCertificate(){
-    try {
-      
-    } catch (error) {
-      console.log(error)
-    }
-  }

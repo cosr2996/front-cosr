@@ -11,10 +11,3 @@ export async function obtenerProjects(){
     }
   }
   
-  export async function crearProject(){
-    try {
-      
-    } catch (error) {
-      console.log(error)
-    }
-  }
