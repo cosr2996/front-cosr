@@ -1,4 +1,4 @@
-
+import Back from "../components/Back";
 import react from "../assets/react.svg";
 import css from "../assets/css.svg";
 import html from "../assets/html.svg";
@@ -30,6 +30,9 @@ const Skills = () => {
         <ItemSkill image={vitejs} title="Vite" progress={90} nivel={"Alto"} />
         <ItemSkill image={redux} title="Redux" progress={25} nivel={"Bajo"} />
         <ItemSkill image={prisma} title="Prisma" progress={25} nivel={"Bajo"} /> 
+      </div>
+      <div className="p-5">
+        <Back ruta={'/'}/>
       </div>
     </>
   );
