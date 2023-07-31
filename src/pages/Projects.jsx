@@ -46,7 +46,7 @@ const Projects = () => {
       </div>
 
       <div className="p-5">
-        <Back/>
+        <Back ruta={'/'}/>
       </div>
     </section>
   );
