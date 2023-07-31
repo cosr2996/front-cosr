@@ -3,6 +3,7 @@ import clienteAxios from "../config/clienteAxios";
 import { useEffect, useState } from "react";
 import alura from "../assets/alura.svg";
 import udemy from "../assets/udemy.svg";
+import Back from "../components/Back";
 
 const Certificate = () => {
   const [certificate, setcertificate] = useState({});
@@ -47,7 +48,9 @@ const Certificate = () => {
           </span>
         </div>
       </div>
+      <Back ruta={'/certificates'}/>
     </div>
+     
   );
 };
 

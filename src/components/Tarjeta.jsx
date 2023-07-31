@@ -2,6 +2,7 @@ import alura from "../assets/alura.svg";
 import udemy from "../assets/udemy.svg";
 import { Link } from "react-router-dom";
 
+
 const Tarjeta = ({ certificate }) => {
   return (
     <article className="sm:w-11/12 xl:w-80 lg:w-3/12 md:w-5/12 bg-white p-2 rounded-md hover:scale-105 transition-all	">
@@ -34,6 +35,9 @@ const Tarjeta = ({ certificate }) => {
           />
         </div>
       </div>
+
+     
+
     </article>
   );
 };
