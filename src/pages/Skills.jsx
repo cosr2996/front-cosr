@@ -12,6 +12,8 @@ import vitejs from "../assets/vitejs.svg";
 import redux from "../assets/redux.svg";
 import prisma from "../assets/prisma.svg";
 import ItemSkill from "../components/ItemSkill";
+import styleComponents from "../assets/StyledComponents.svg"
+import MUI from "../assets/MUI.svg"
 
 const Skills = () => {
   return (
@@ -30,6 +32,8 @@ const Skills = () => {
         <ItemSkill image={vitejs} title="Vite" progress={90} nivel={"Alto"} />
         <ItemSkill image={redux} title="Redux" progress={25} nivel={"Bajo"} />
         <ItemSkill image={prisma} title="Prisma" progress={25} nivel={"Bajo"} /> 
+        <ItemSkill image={styleComponents} title="Styled Components" progress={50} nivel={"Medio"} /> 
+        <ItemSkill image={MUI} title="MUI" progress={50} nivel={"Medio"} /> 
       </div>
       <div className="p-5">
         <Back ruta={'/'}/>

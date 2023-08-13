@@ -27,7 +27,7 @@ const Index = () => {
     const obtenerFavorito = async () => {
       try {
         const { data } = await clienteAxios(
-          "/projects/64b6538234a1241564c4e989"
+          "/projects/64cd98fe64938f43e919c8c5"
         );
         setFavorito(data);
       } catch (error) {
@@ -80,8 +80,8 @@ const Index = () => {
             Skills
           </h3>
           <div className="flex justify-around flex-wrap ">
-            <div className="sm:w-1/3 sm:p-5 lg:w-2/12">
-              <ul className="flex flex-col items-center gap-2">
+            <div className="sm:w-1/3 sm:p-5 lg:w-2/12 ">
+              <ul className="flex flex-col items-center gap-2 ">
                 <li className="">
                   <img className=" hover:scale-105 transition duration-300 w-12" src={html} />
                 </li>
